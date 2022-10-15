@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Open+Sans&family=Outfit:wght@300&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+body {
+  font-size: 18px;
+}
+.container {
+  width: 343px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.hero-tablet {
+  display: none;
+}
+.hero-mobile {
+  width: 100%;
+}
+h1 {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.3em;
+  line-height: 55px;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 8%, 1);
+}
+.header-text-box p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  color: hsla(0, 0%, 27%, 1);
+  padding-top: 32px;
+}
+.loc-btn {
+  display: flex;
+  padding-top: 32px;
+}
+.arrow {
+  background-color: hsla(24, 56%, 63%, 1);
+  padding: 24px;
+}
+.btn-a {
+  padding: 24px 35px 24px 32px;
+  background-color: hsla(0, 0%, 8%, 1);
+  color: hsla(0, 0%, 100%, 1);
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.1em;
+  line-height: 24px;
+  letter-spacing: 3.63636px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*Main Section*/
+
+.boxes {
+  padding-top: 120px;
+  display: grid;
+  grid-gap: 16px;
+}
+.box-1-img-tablet,
+.box-2-img-tablet,
+.box-3-img-tablet {
+  display: none;
+}
+.gallery-box {
+  padding-top: 144px;
+}
+.box-1 {
+  padding-bottom: 20px;
+}
+.box-1-txt h2 {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.7em;
+  line-height: 90%;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 8%, 1);
+  padding-top: 25px;
+  padding-bottom: 21px;
+}
+.box-1-txt p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  color: hsla(0, 0%, 27%, 1);
+}
+.box-3 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.box-4 {
+  background-color: hsla(0, 0%, 8%, 1);
+  padding: 48px 24px;
+}
+.box-4 h2 {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.7em;
+  line-height: 90%;
+  color: white;
+  text-transform: uppercase;
+}
+.box-4 p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  color: hsla(0, 0%, 100%, 1);
+  padding-top: 38px;
+}
+footer {
+  background-color: hsla(0, 0%, 8%, 1);
+  margin-top: 120px;
+  padding: 48px 32px;
+}
+footer h2 {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5em;
+  line-height: 90%;
+  color: white;
+  text-transform: uppercase;
+}
+
+footer p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: hsla(0, 0%, 100%, 1);
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+.soc {
+  display: flex;
+  align-items: center;
+}
+.insta,
+.twit {
+  padding-left: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+  .container {
+    width: 90vw;
+  }
+  .hero-mobile {
+    display: none;
+  }
+  .hero-tablet {
+    display: block;
+  }
+  .header-text-box {
+    position: relative;
+    left: -10vw;
+  }
+
+  .box-1-img-mobile,
+  .box-2-img-mobile,
+  .box-3-img-mobile {
+    display: none;
+  }
+  .box-1-img-tablet,
+  .box-2-img-tablet,
+  .box-3-img-tablet {
+    display: block;
+  }
+  .gallery-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .box-1-txt {
+    width: 35%;
+  }
+  .pic-boxes {
+    display: flex;
+    justify-content: flex-start;
+    gap: 11px;
+  }
+  .box-3 {
+    margin-top: 0px;
+  }
+  .box-4 {
+    height: 295px;
+  }
+}

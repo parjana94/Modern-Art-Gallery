@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Open+Sans&family=Outfit:wght@300&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+.arrow {
+  background-color: hsla(24, 56%, 63%, 1);
+  padding: 24px;
+}
+.map-img {
+  width: 100%;
+}
+.btn-a {
+  padding: 24px 35px 24px 32px;
+  background-color: hsla(0, 0%, 8%, 1);
+  color: hsla(0, 0%, 100%, 1);
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.1em;
+  line-height: 24px;
+  letter-spacing: 3.63636px;
+  text-decoration: none;
+}
+
+.back-btn {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.loc {
+  background-color: hsla(0, 0%, 8%, 1);
+  padding: 48px 16px 56px 16px;
+}
+h1 {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 1);
+  padding-bottom: 48px;
+}
+.loc h2 {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: hsla(24, 56%, 63%, 1);
+  padding-bottom: 20px;
+}
+.loc address,
+.loc p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: hsla(0, 0%, 100%, 1);
+}
+.loc address {
+  text-transform: capitalize;
+}
+.loc p {
+  padding-top: 20px;
+}
+.art-gallery {
+  background-color: hsla(24, 56%, 63%, 1);
+  padding: 48px 32px;
+}
+
+.art-gallery h2 {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5em;
+  line-height: 90%;
+  color: white;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 8%, 1);
+  padding-bottom: 38px;
+}
+
+.art-gallery p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 38px;
+}
+.soc {
+  display: flex;
+  align-items: center;
+}
+.insta,
+.twit {
+  padding-left: 20px;
+}
+
+.fb a {
+  color: hsla(0, 0%, 8%, 1);
+}
+
+.fa-square-facebook {
+  color: black;
+}
