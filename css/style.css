@@ -19,6 +19,9 @@ header {
 .hero-mobile {
   width: 100%;
 }
+.hero-desktop {
+  display: none;
+}
 h1 {
   font-family: "Big Shoulders Display";
   font-style: normal;
@@ -40,9 +43,17 @@ h1 {
   display: flex;
   padding-top: 32px;
 }
+.loc-btn:hover > .btn-a {
+  background-color: #d5966c;
+}
 .arrow {
   background-color: hsla(24, 56%, 63%, 1);
   padding: 24px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.loc-btn:hover > .arrow {
+  background-color: #151515;
 }
 .btn-a {
   padding: 24px 35px 24px 32px;
@@ -56,6 +67,7 @@ h1 {
   letter-spacing: 3.63636px;
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.5s;
 }
 
 /*Main Section*/
@@ -70,6 +82,12 @@ h1 {
 .box-3-img-tablet {
   display: none;
 }
+.box-1-img-desktop,
+.box-2-img-desktop,
+.box-3-img-desktop {
+  display: none;
+}
+
 .gallery-box {
   padding-top: 144px;
 }
@@ -152,6 +170,13 @@ footer p {
 .twit {
   padding-left: 20px;
 }
+.fa-brands {
+  color: white;
+  transition: 0.5s;
+}
+.fa-brands:hover {
+  color: #d5966c;
+}
 
 @media only screen and (min-width: 768px) {
   header {
@@ -159,7 +184,7 @@ footer p {
     align-items: center;
   }
   .container {
-    width: 90vw;
+    width: 690px;
   }
   .hero-mobile {
     display: none;
@@ -175,6 +200,11 @@ footer p {
   .box-1-img-mobile,
   .box-2-img-mobile,
   .box-3-img-mobile {
+    display: none;
+  }
+  .box-1-img-desktop,
+  .box-2-img-desktop,
+  .box-3-img-desktop {
     display: none;
   }
   .box-1-img-tablet,
@@ -200,5 +230,72 @@ footer p {
   }
   .box-4 {
     height: 295px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer p {
+    width: 280px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1110px;
+  }
+  .hero-images {
+    display: none;
+  }
+  .hero-desktop {
+    display: flex;
+  }
+  .hero-desktop img {
+    width: 540px;
+    height: 800px;
+  }
+  .hero-desktop h2 {
+    position: absolute;
+    height: 176px;
+    left: 13.5%;
+    top: 25%;
+    font-family: "Big Shoulders Display";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 88px;
+    text-transform: uppercase;
+    color: white;
+    mix-blend-mode: difference;
+  }
+  .hero-black {
+    width: 450px;
+    height: 800px;
+    background-color: hsla(0, 0%, 8%, 1);
+  }
+  h1 {
+    display: none;
+  }
+  .header-text-box p {
+    width: 275px;
+  }
+  .box-1-img-tablet,
+  .box-2-img-tablet,
+  .box-3-img-tablet {
+    display: none;
+  }
+  .box-1-img-desktop,
+  .box-2-img-desktop,
+  .box-3-img-desktop {
+    display: block;
+  }
+  .box-2-img-desktop {
+    height: 720px;
+  }
+  .box-3-img-desktop {
+    width: 100%;
+  }
+  footer p {
+    width: 430px;
   }
 }

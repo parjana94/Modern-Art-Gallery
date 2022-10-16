@@ -3,9 +3,19 @@
 .arrow {
   background-color: hsla(24, 56%, 63%, 1);
   padding: 24px;
+  transition: 0.5s;
+}
+.back-btn:hover > .arrow {
+  background-color: hsla(0, 0%, 8%, 1);
 }
 .map-img {
   width: 100%;
+}
+.map-img-tablet {
+  display: none;
+}
+.map-img-desktop {
+  display: none;
 }
 .btn-a {
   padding: 24px 35px 24px 32px;
@@ -18,8 +28,11 @@
   line-height: 24px;
   letter-spacing: 3.63636px;
   text-decoration: none;
+  transition: 0.5s;
 }
-
+.back-btn:hover > .btn-a {
+  background-color: hsla(24, 56%, 63%, 1);
+}
 .back-btn {
   display: flex;
   position: absolute;
@@ -39,6 +52,9 @@ h1 {
   text-transform: uppercase;
   color: hsla(0, 0%, 100%, 1);
   padding-bottom: 48px;
+}
+.br {
+  display: none;
 }
 .loc h2 {
   font-family: "Big Shoulders Display";
@@ -105,4 +121,56 @@ h1 {
 
 .fa-square-facebook {
   color: black;
+}
+
+.fa-brands {
+  color: hsla(0, 0%, 8%, 1);
+  transition: 0.5s;
+}
+.fa-brands:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .map-img {
+    display: none;
+  }
+  .map-img-tablet {
+    display: block;
+    width: 100%;
+  }
+  .back-btn {
+    left: 40px;
+  }
+  .loc {
+    display: flex;
+    justify-content: space-between;
+    padding: 88px 40px;
+  }
+  .loc-txt {
+    width: 400px;
+  }
+  .br {
+    display: block;
+  }
+  .art-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .art-gallery p {
+    width: 280px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .map-img-tablet {
+    display: none;
+  }
+  .map-img-desktop {
+    display: block;
+    width: 100%;
+  }
+  .back-btn {
+    left: 80px;
+  }
 }

@@ -12,6 +12,13 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/loc-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script
       src="https://kit.fontawesome.com/aef653fa80.js"
       crossorigin="anonymous"
@@ -20,22 +27,37 @@
   <body>
     <div class="map">
       <img class="map-img" src="assets/mobile/image-map.png" alt="map" />
+      <img class="map-img-tablet" src="assets/tablet/image-map.png" alt="map" />
+      <img
+        class="map-img-desktop"
+        src="assets/desktop/image-map.png"
+        alt="map"
+      />
       <div class="back-btn">
         <img class="arrow" src="assets/icon-arrow-left.svg" alt="arr-left" />
-        <a class="btn-a" href="#">back to home</a>
+        <a class="btn-a" href="index.html">back to home</a>
       </div>
     </div>
     <div class="loc">
-      <h1>our location</h1>
-      <h2>99 king street</h2>
-      <address>newport</address>
-      <address>ri 02840</address>
-      <address>united states of amerika</address>
-      <p>
-        Our newly opened gallery is located near the Edward King House on 99
-        King Street, the Modern Art Gallery is free to all visitors and open
-        seven days a week from 8am to 9pm.
-      </p>
+      <div class="loc-main-txt">
+        <h1>
+          our
+          <div class="br"><br /></div>
+          location
+        </h1>
+      </div>
+
+      <div class="loc-txt">
+        <h2>99 king street</h2>
+        <address>newport</address>
+        <address>ri 02840</address>
+        <address>united states of amerika</address>
+        <p>
+          Our newly opened gallery is located near the Edward King House on 99
+          King Street, the Modern Art Gallery is free to all visitors and open
+          seven days a week from 8am to 9pm.
+        </p>
+      </div>
     </div>
     <div class="art-gallery">
       <h2>
@@ -48,13 +70,13 @@
       </p>
       <div class="soc">
         <div class="fb">
-          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-facebook fa-lg"></i></a>
         </div>
         <div class="insta">
-          <a href="#"><img src="assets/icon-instagram.svg" alt="insta" /></a>
+          <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
         </div>
         <div class="twit">
-          <a href="#"><img src="assets/icon-twitter.svg" alt="twit" /></a>
+          <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
         </div>
       </div>
     </div>
